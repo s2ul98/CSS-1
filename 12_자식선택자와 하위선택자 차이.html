@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* 자식 선택자 */
+    /* ul 태그의 자식이면서 li태그인 요소를 선택 */
+    /* ul > li {
+      color : orange;
+    } */
+     /* 하위 선택자 */
+     /* ul태그의 자손이면서 li태그인 요소를 선택 */
+     ul li {
+      color : orange;}
+  </style>
+</head>
+<body>
+  
+  <div>
+    <ul>
+      <li>사과</li>
+      <li>딸기</li>
+      <li>오렌지</li>
+      <ol>
+        <!-- 4번째 li는(ol안에 li) ul태그의 직계 자식이 아님 -->
+         <!-- 4번쨰 li는 ul태그의 자손 -->
+        <li>ul안에 ol리스트</li>
+      </ol>
+    </ul>
+    <div>당근</div>
+    <p>토마토</p>
+    <span>오렌지</span>
+  </div>
+  <span>오렌지</span>
+</body>
+</html>
