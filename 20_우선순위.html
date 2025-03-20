@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    /* important 플래ㅡ -> style 속성 -> 아이디 선택자 -> 클래스 선택자 -> 태그 선택자 */
+    div { /* 태그 선택자 */
+      color: red;
+    }
+    #color_yellow { /* 아이디 선택자 */
+     color: yellow;
+    }
+    .color_green { /* 클래스 선택자 */
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <!-- 스타일 우선 순위 -->
+   <div id="color_yellow" class="color_green" style="color: orange;">
+    Hello, world!
+   </div>
+</body>
+</html>

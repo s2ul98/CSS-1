@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <style>
+    .parent {
+      width: 200px;
+      height: 200px;
+      background-color: rgb(255, 174, 0);
+    }
+    /* 크기와 배경은 상속 안됨 */
+    .child {
+      width: 100px;
+      height: inherit; /* 강제 상속 */
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <div class="child"></div>
+  </div>
+</body>
+</html>
